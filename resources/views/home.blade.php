@@ -1,6 +1,7 @@
 @extends('component.app')
 @section('title', 'Home')
 @section('content')
+<div class="h-screen pb-14 bg-right bg-cover" style="background-image:url('{{ asset('assets/bg.svg') }}');">
   @include('component.navbar')
       <!--Main-->
       <div class="container pt-24 md:pt-48 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">

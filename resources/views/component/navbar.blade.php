@@ -42,7 +42,7 @@
     @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
         
    </style>
-  <div class="h-screen pb-14 bg-right bg-cover" style="background-image:url('{{ asset('assets/bg.svg') }}');">
+  
     <!--Nav-->
     <div class="w-full container mx-auto p-6">
       <div class="w-full flex items-center justify-between">
