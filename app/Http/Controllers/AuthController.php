@@ -48,9 +48,8 @@ class AuthController extends Controller
 
         $credentials = $request->only('email', 'password');
 
-        if (Auth::attempt($credentials)) {
-            // Login berhasil, arahkan ke dashboard
-            return redirect()->intended('dashboard');
+        if (Auth::attempt($credentials, $request->filled('remember'))) {
+            return redirect()->intended('dashboard'); // Ganti 'dashboard' dengan rute setelah login
         }
 
         // Login gagal, kembalikan ke halaman login dengan pesan error
@@ -65,6 +64,6 @@ class AuthController extends Controller
         Auth::logout();
         request()->session()->invalidate();
         request()->session()->regenerateToken();
-        return redirect('/beranda');
+        return redirect('/');
     }
 }

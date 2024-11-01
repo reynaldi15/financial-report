@@ -36,8 +36,8 @@
     
                 <div class="flex flex-wrap items-center justify-between gap-4">
                   <div class="flex items-center">
-                    <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded" />
-                    <label for="remember-me" class="ml-3 block text-sm text-gray-800">
+                    <input id="remember_me" name="remember" type="checkbox" class="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded" />
+                    <label for="remember_me" class="ml-3 block text-sm text-gray-800">
                       Remember me
                     </label>
                   </div>
